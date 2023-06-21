@@ -1,0 +1,9 @@
+.location {
+    @include flex-center;
+    height: 50px;
+    background-color: $secondary-background;
+    i {
+        display: block;
+        padding: 0 15px;
+    }
+}

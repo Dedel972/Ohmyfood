@@ -1,0 +1,9 @@
+header{
+   @include flex-center;
+    height: 65px;
+    background-color: yellow;
+    img {
+        width: 162px;
+        height: 44px;
+    }
+}
