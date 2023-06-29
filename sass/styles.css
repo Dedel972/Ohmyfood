@@ -1,3 +1,20 @@
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: auto;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -20,4 +37,45 @@ header img {
 .location i {
   display: block;
   padding: 0 15px;
+}
+
+.section_reservation {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding-bottom: 57px;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 1025px) {
+  .section_reservation {
+    padding-bottom: 30px;
+  }
+}
+.section_reservation h1 {
+  font-size: 1.5em;
+  margin: 39.5px 5px 0 5px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+.section_reservation > p {
+  font-size: 1.125em;
+  font-weight: 300;
+  padding: 27px 25px 27px 25px;
+}
+
+.section_button {
+  color: #ffffff;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 1em;
+  font-weight: 500;
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */
