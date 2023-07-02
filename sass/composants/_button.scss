@@ -13,5 +13,14 @@
         &::after {
             opacity: 0.15;
         }
+        &::after {
+            content: "";
+            position: absolute;
+            @include poisition-0;
+            background-color: #ffffff;
+            opacity: 0;
+            z-index: -1;
+    
+        }  
 }
 
