@@ -1,0 +1,67 @@
+.footer {
+    background-color: darken($secondary-background, 70);
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+    &--shift {
+        position: relative;
+        top:-60px;
+        @media (min-width: 768px) and (max-width:1025px){
+            top: -90px;
+        }
+        }
+        @media (min-width: 1025px) {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            gap: 90px;
+            padding: 50px 50px 25px 0;
+        }
+        a {
+            text-decoration:none;
+            color: #ffffff;
+        }
+        &_logo{
+            font-family: 'Shrikhand';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            color: #ffffff;
+            @media (min-width: 1025px) {
+                position: relative;
+                top: -3px;
+            }
+        }
+        &-line {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            @media (min-width: 1025px) {
+                flex-direction: row;
+            }
+            &_part1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 15px;
+                p {
+                    margin: 0;
+                }
+                @media (min-width: 1025px) {
+                    flex-direction: row;
+                }
+            }
+            &_part2 {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                @media (min-width: 1025px) {
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
+}

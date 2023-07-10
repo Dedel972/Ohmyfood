@@ -108,3 +108,76 @@ h2 {
     }
 }
 }
+.restaurants {
+    @include flex-center;
+    flex-direction: column;
+    background-color: $primary-background;
+    position: relative;
+    padding: 50px 20px;
+    @media (min-width: 768px) {
+        padding: 30px 20px 0 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 1060px;
+        text-align: left;
+    }
+    &_1,&_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+            margin-bottom: 30px;
+        } 
+    }
+    &_1 {
+        @media (min-width: 768px) {
+            margin-bottom: 50px;
+        }
+    }
+    &-card {
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        min-width: 340px;
+        overflow: hidden;
+        position: relative;
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+        @media (min-width: 1025px) {
+            max-width: 490px;
+        }
+        &_new {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            background-color: red;
+            color: $color-tertiary-bis;
+            padding: 6px 9px;
+            font-size: 0.875em;
+            font-weight: 500;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+        }
+          
+        &_img {
+            width: 100%;
+            height: 175px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-position: 0 -50px;
+                @media (min-width: 1025px) {
+                    object-position: 0 -100px;
+                }
+            }    
+        }
+ }
+
+ }

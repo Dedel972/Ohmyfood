@@ -163,4 +163,76 @@ header img {
   color: #9356DC;
 }
 
-@im @import "./composants/button";/*# sourceMappingURL=styles.css.map */
+.restaurants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  position: relative;
+  padding: 50px 20px;
+}
+@media (min-width: 768px) {
+  .restaurants {
+    padding: 30px 20px 0 20px;
+  }
+}
+.restaurants h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 1060px;
+  text-align: left;
+}
+.restaurants_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .restaurants_1 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants_1 {
+    margin-bottom: 50px;
+  }
+}
+.restaurants-card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  min-width: 340px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .restaurants-card {
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .restaurants-card {
+    max-width: 490px;
+  }
+}
+.restaurants-card_img {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+}
+.restaurants-card_img img {
+  width: 100%;
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
+}
+@media (min-width: 1025px) {
+  .restaurants-card_img img {
+    -o-object-position: 0 -100px;
+       object-position: 0 -100px;
+  }
+}/*# sourceMappingURL=styles.css.map */
