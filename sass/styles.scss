@@ -1,8 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixin";
+@import "./composants/button";
 @import "./base/main-container";
 @import "./layout/header";
-@import "./restaurants/home";
-@import "./composants/button";
 @import "./layout/footer";
-@import "./restaurants/restos";
+@import "./restaurants/home";
